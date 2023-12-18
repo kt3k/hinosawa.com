@@ -17,7 +17,7 @@ function main() {
       `console.log("Hello World!")`,
     ],
     body: (
-      <div class="flex items-center justify-center w-screen h-screen bg-black">
+      <div class="flex items-center justify-center w-screen h-[100svh] bg-black">
         <div class="flex flex-col items-center justify-center gap-7">
           <img src="/logo.svg" class="h-4" />
           <p class="text-gray-300 font-light">Hinosawa Software</p>
