@@ -24,8 +24,8 @@ function main() {
         </div>
       </div>
     ),
-  })
-};
+  });
+}
 
 const files = [
   "/logo.svg",
@@ -36,7 +36,9 @@ Deno.serve(async (req) => {
   const url = new URL(req.url);
 
   if (files.includes(url.pathname)) {
-    return new Response((await Deno.open(url.pathname.slice(1))).readable, { headers: { "content-type": "image/svg+xml" } });
+    return new Response((await Deno.open(url.pathname.slice(1))).readable, {
+      headers: { "content-type": "image/svg+xml" },
+    });
   } else {
     return main();
   }
