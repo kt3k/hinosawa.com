@@ -24,8 +24,43 @@ function main() {
             <p class="text-gray-300 font-light">Hinosawa Software</p>
           </div>
         </div>
-        <div class="flex items-center justify-center w-screen h-[100lvh] bg-white">
-          hello
+        <div class="flex items-center justify-center w-screen h-[100lvh] bg-white text-gray-600">
+          <table class="border-separate border-spacing-3">
+            <tr>
+              <td class="text-right">会社名</td>
+              <td>株式会社ひのさわソフトウェア</td>
+            </tr>
+            <tr>
+              <td class="text-right">設立</td>
+              <td>TBD</td>
+            </tr>
+            <tr>
+              <td class="text-right">資本金</td>
+              <td>2,000,000円</td>
+            </tr>
+            <tr>
+              <td class="text-right">代表者</td>
+              <td>日野澤歓也</td>
+            </tr>
+            <tr>
+              <td class="text-right">所在地</td>
+              <td>東京都江東区</td>
+            </tr>
+            <tr>
+              <td class="align-top text-right">事業内容</td>
+              <td>
+                <ul>
+                  <li>Web技術を用いた各種管理システムの開発</li>
+                  <li>Web技術を用いた各種エディタの開発</li>
+                  <li>教育用プログラミング言語の開発</li>
+                  <li>JavaScript処理系の開発</li>
+                  <li>
+                    クラウドエッジコンピューティングプラットフォームの開発
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     ),
