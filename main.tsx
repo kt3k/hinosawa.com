@@ -24,7 +24,7 @@ function main() {
             <p class="text-gray-300 font-light">Hinosawa Software</p>
           </div>
         </div>
-        <div class="flex items-center justify-center w-screen h-[100svh] bg-white">
+        <div class="flex items-center justify-center w-screen h-[100lvh] bg-white">
           hello
         </div>
       </div>
