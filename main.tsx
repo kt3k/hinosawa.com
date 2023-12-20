@@ -25,7 +25,7 @@ function main() {
           </div>
         </div>
         <div class="flex items-center justify-center w-screen h-[100lvh] bg-white text-gray-600">
-          <table class="border-separate border-spacing-3">
+          <table class="border-separate border-spacing-3 mx-4">
             <tr>
               <td class="text-right">会社名</td>
               <td>株式会社ひのさわソフトウェア</td>
