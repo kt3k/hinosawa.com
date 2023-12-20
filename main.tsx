@@ -25,31 +25,31 @@ function main() {
           </div>
         </div>
         <div class="flex items-center justify-center w-screen h-[100lvh] bg-white text-gray-600">
-          <table class="border-separate border-spacing-3 mx-4">
+          <table class="border-separate border-spacing-3 mx-2">
             <tr>
-              <td class="text-right">会社名</td>
+              <td class="text-right whitespace-nowrap">会社名</td>
               <td>株式会社ひのさわソフトウェア</td>
             </tr>
             <tr>
-              <td class="text-right">設立</td>
+              <td class="text-right whitespace-nowrap">設立</td>
               <td>TBD</td>
             </tr>
             <tr>
-              <td class="text-right">資本金</td>
+              <td class="text-right whitespace-nowrap">資本金</td>
               <td>2,000,000円</td>
             </tr>
             <tr>
-              <td class="text-right">代表者</td>
+              <td class="text-right whitespace-nowrap">代表者</td>
               <td>日野澤歓也</td>
             </tr>
             <tr>
-              <td class="text-right">所在地</td>
+              <td class="text-right whitespace-nowrap">所在地</td>
               <td>東京都江東区</td>
             </tr>
             <tr>
-              <td class="align-top text-right">事業内容</td>
+              <td class="align-top text-right whitespace-nowrap">事業内容</td>
               <td>
-                <ul>
+                <ul class="text-sm">
                   <li>Web技術を用いた各種管理システムの開発</li>
                   <li>Web技術を用いた各種エディタの開発</li>
                   <li>教育用プログラミング言語の開発</li>
