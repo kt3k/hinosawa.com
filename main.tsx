@@ -24,7 +24,7 @@ function main() {
             <p class="text-gray-300 font-light">Hinosawa Software</p>
           </div>
         </div>
-        <div class="flex items-center justify-center w-screen h-[100lvh] bg-white text-gray-600">
+        <div class="relative flex items-center justify-center w-screen h-[100lvh] bg-white text-gray-600">
           <table class="border-separate border-spacing-3 mx-2">
             <tr>
               <td class="text-right whitespace-nowrap">会社名</td>
@@ -61,21 +61,40 @@ function main() {
               </td>
             </tr>
           </table>
+          <div class="text-center absolute bottom-0 mb-4 text-gray-600">
+            <Logo class="h-4" />
+          </div>
         </div>
       </div>
     ),
   });
 }
 
-const files = [
-  "/logo.svg",
-  "/logo_with_bg.svg",
-];
+function Logo(props: { class?: string }) {
+  return (
+    <svg
+      class={props.class}
+      width="60px"
+      height="100px"
+      viewBox="0 0 60 100"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g id="path" transform="translate(-470, -450)" fill="currentColor">
+          <path d="M470,550 L470,450 L530,450 L530,550 L470,550 Z M490,530 L510,530 L510,510 L490,510 L490,530 Z M490,490 L510,490 L510,470 L490,470 L490,490 Z">
+          </path>
+        </g>
+      </g>
+    </svg>
+  );
+}
 
 Deno.serve(async (req) => {
   const url = new URL(req.url);
 
-  if (files.includes(url.pathname)) {
+  if (url.pathname.endsWith(".svg")) {
     return new Response((await Deno.open(url.pathname.slice(1))).readable, {
       headers: { "content-type": "image/svg+xml" },
     });
