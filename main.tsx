@@ -20,7 +20,7 @@ function main() {
       <div>
         <div class="flex items-center justify-center w-screen h-[100svh] bg-black">
           <div class="flex flex-col items-center justify-center gap-7">
-            <img src="/logo.svg" class="h-4" />
+            <Logo class="text-white h-4" />
             <p class="text-gray-300 font-light">Hinosawa Software</p>
           </div>
         </div>
